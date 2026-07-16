@@ -3,17 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>유튜브 영상 보기</title>
+    <title>YouTube Player</title>
     <style>
-        html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; }
-        iframe { width: 100%; height: 100%; border: none; display: block; }
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #000; /* 로딩 중 검은 배경 */
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
     </style>
 </head>
 <body>
-    <!-- 주소 중간에 반드시 /embed/ 가 들어가야 합니다 -->
+
+    <!-- src 주소 중간에 /embed/ 가 들어갔는지 꼭 확인하세요 -->
     <iframe src="https://youtube.com" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen>
     </iframe>
+
 </body>
 </html>
